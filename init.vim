@@ -9,11 +9,11 @@ set encoding=UTF-8
 
 " save fold on case of exit
 set foldmethod=syntax
-augroup remember_folds
-	autocmd!
-	autocmd BufWinLeave * mkview
-	autocmd BufWinEnter * silent! loadview
-augroup END
+"augroup remember_folds
+"	autocmd!
+"	autocmd BufWinLeave * mkview
+"	autocmd BufWinEnter * silent! loadview
+"augroup END
 
 
 set hidden                   " hide buffers when abandoned instead of unload

@@ -58,6 +58,14 @@ Plug 'rhysd/vim-grammarous'
 " Linters
 Plug 'w0rp/ale'
 " TODO: activate ale_fixer and autofixer
+let g:ale_typescript_tslint_config_path = '/home/diako/projects/junior/client/tslint.json'
+let g:ale_typescript_tslint_executable = '/home/diako/sandbox/junior/client/node_modules/tslint/bin/tslint'
+"let g:ale_typescript_tslint_executable = 'tslint'
+let g:ale_typescript_tslint_ignore_empty_files = 0
+let g:ale_typescript_tslint_rules_dir = ''
+let g:ale_typescript_tslint_use_global = 1
+let g:ale_linters = {'typescript': ['tslint']} 
+
 
 " Multiple cursors
 Plug 'terryma/vim-multiple-cursors'
