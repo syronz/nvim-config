@@ -58,13 +58,13 @@ Plug 'rhysd/vim-grammarous'
 " Linters
 Plug 'w0rp/ale'
 " TODO: activate ale_fixer and autofixer
-let g:ale_typescript_tslint_config_path = '/home/diako/projects/junior/client/tslint.json'
-let g:ale_typescript_tslint_executable = '/home/diako/sandbox/junior/client/node_modules/tslint/bin/tslint'
-"let g:ale_typescript_tslint_executable = 'tslint'
-let g:ale_typescript_tslint_ignore_empty_files = 0
-let g:ale_typescript_tslint_rules_dir = ''
-let g:ale_typescript_tslint_use_global = 1
-let g:ale_linters = {'typescript': ['tslint']} 
+"let g:ale_typescript_tslint_config_path = '/home/diako/projects/junior/client/tslint.json'
+"let g:ale_typescript_tslint_executable = '/home/diako/sandbox/junior/client/node_modules/tslint/bin/tslint'
+""let g:ale_typescript_tslint_executable = 'tslint'
+"let g:ale_typescript_tslint_ignore_empty_files = 0
+"let g:ale_typescript_tslint_rules_dir = ''
+"let g:ale_typescript_tslint_use_global = 1
+"let g:ale_linters = {'typescript': ['tslint']} 
 
 
 " Multiple cursors
@@ -84,6 +84,33 @@ Plug 'andymass/vim-matchup'
 
 " NerdTree in sidebar
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+let NERDTreeIgnore = [
+	\ '\.git$', '\.hg$', '\.svn$', '\.stversions$', '\.pyc$', '\.svn$',
+	\ '\.DS_Store$', '\.sass-cache$', '__pycache__$', '\.egg-info$'
+	\ ]
+function! s:SID()
+    if ! exists('s:sid')
+        let s:sid = matchstr(expand('<sfile>'), '<SNR>\zs\d\+\ze_SID$')
+    endif
+    return s:sid
+endfunction
+let s:SNR = '<SNR>'.s:SID().'_'
+let NERDTreeQuitOnOpen=1
+call NERDTreeAddKeyMap({
+            \ 'key': 'w',
+            \ 'callback': s:SNR.'toggle_width',
+            \ 'quickhelpText': 'Toggle window width' })
+
+function! s:toggle_width()
+    let l:max = 0
+    for l:z in range(1, line('$'))
+        let l:len = len(getline(l:z))
+        if l:len > l:max
+            let l:max = l:len
+        endif
+    endfor
+    exe 'vertical resize '.(l:max == winwidth('.') ? g:NERDTreeWinSize : l:max)
+endfunction
 
 " Fonts for nerd tree as icon
 "Plug 'ryanoasis/vim-devicons',{ 'on': ['NERDTreeToggle', 'NERDTreeFind'] }

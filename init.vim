@@ -18,7 +18,7 @@ set foldmethod=syntax
 
 set hidden                   " hide buffers when abandoned instead of unload
 set synmaxcol=1000           " Don't syntax highlight long lines
-set colorcolumn=100
+set colorcolumn=90
 
 
 " Behavior
