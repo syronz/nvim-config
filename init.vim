@@ -35,7 +35,7 @@ set clipboard+=unnamedplus
 "set noshowmode          " Don't show mode in cmd window
 set showtabline=2       " Always show the tabs line
 set scrolloff=2         " Keep at least 2 lines above/below
-set sidescrolloff=5     " Keep at least 5 lines left/right
+set sidescrolloff=2     " Keep at least 5 characters left/right
 set display=lastline
 
 " Javascript
