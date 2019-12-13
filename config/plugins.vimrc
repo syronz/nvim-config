@@ -96,10 +96,10 @@ function! s:SID()
 endfunction
 let s:SNR = '<SNR>'.s:SID().'_'
 let NERDTreeQuitOnOpen=1
-call NERDTreeAddKeyMap({
-            \ 'key': 'w',
-            \ 'callback': s:SNR.'toggle_width',
-            \ 'quickhelpText': 'Toggle window width' })
+" call NERDTreeAddKeyMap({
+"             \ 'key': 'w',
+            " \ 'callback': s:SNR.'toggle_width',
+            " \ 'quickhelpText': 'Toggle window width' })
 
 function! s:toggle_width()
     let l:max = 0
