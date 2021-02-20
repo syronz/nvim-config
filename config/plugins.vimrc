@@ -42,6 +42,11 @@ let g:go_highlight_variable_declarations = 1
 let g:go_highlight_variable_assignments = 1
 let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment'] 
 "let g:go_fmt_experimental = 1
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<tab>"
+" list all snippets for current filetype
+let g:UltiSnipsListSnippets="<c-l>"
 
 
 

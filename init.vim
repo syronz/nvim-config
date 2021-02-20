@@ -114,3 +114,4 @@ fu! ToggleCheckbox()
 endf
 
 
+:command! Gos GoImports
