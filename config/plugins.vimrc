@@ -163,6 +163,12 @@ Plug 'epilande/vim-es2015-snippets'
   Plug 'brooth/far.vim',{  'on': ['Far',  'Farp',  'F'] }
   Plug 'jremmen/vim-ripgrep'
 
+" -----------------------------------------------------------------------------
+" ReScript
+" -----------------------------------------------------------------------------
+Plug 'rescript-lang/vim-rescript'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 
 

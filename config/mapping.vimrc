@@ -145,6 +145,9 @@ nnoremap <silent> [Tabs]t :tabnew<CR>
 nnoremap <silent> [Tabs]l :tabnext<CR>
 nnoremap <silent> [Tabs]h :tabprev<CR>
 
+"used for ReScript
+nnoremap <silent> [Tabs]o :RescriptJumpToDefinition<CR>
+
 " -----------------------------------------------------------------------------
 " Files
 " -----------------------------------------------------------------------------
