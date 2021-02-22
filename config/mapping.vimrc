@@ -147,6 +147,8 @@ nnoremap <silent> [Tabs]h :tabprev<CR>
 
 "used for ReScript
 nnoremap <silent> [Tabs]o :RescriptJumpToDefinition<CR>
+:command! Rf RescriptFormat 
+nnoremap <silent> [Tabs]i :RescriptTypeHint<CR>
 
 " -----------------------------------------------------------------------------
 " Files
