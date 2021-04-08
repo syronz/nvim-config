@@ -166,9 +166,10 @@ Plug 'epilande/vim-es2015-snippets'
 " -----------------------------------------------------------------------------
 " ReScript
 " -----------------------------------------------------------------------------
-Plug 'rescript-lang/vim-rescript'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'rescript-lang/vim-rescript'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'morhetz/gruvbox'
 
 
 
