@@ -15,11 +15,11 @@ map('n', '<space>o', [[:TagbarShowTag<CR>]], {})
 
 
 -- Find
-map('n', '<leader>ft', ':TodoTelescope<CR>', {})
-map('n', '<leader>ff', ':lua require"telescope.builtin".find_files({no_ignore=true, hidden=true})<CR>', {})
-map('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>', {})
-map('n', '<leader>fb', ':lua require"telescope.builtin".buffers()<CR>', {})
-map('n', '<leader>fh', ':lua require"telescope.builtin".help_tags()<CR>', {})
+map('n', '<leader>to', ':TodoTelescope<CR>', {})
+map('n', '<leader>f', ':lua require"telescope.builtin".find_files({no_ignore=true, hidden=true})<CR>', {})
+map('n', '<leader>g', ':lua require"telescope.builtin".live_grep()<CR>', {})
+map('n', '<leader>b', ':lua require"telescope.builtin".buffers()<CR>', {})
+map('n', '<leader>hh', ':lua require"telescope.builtin".help_tags()<CR>', {})
 
 -- Pane switcher
 map('n', '<C-j>', '<C-W>j', {})
