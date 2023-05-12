@@ -197,6 +197,11 @@ _G.packer_plugins = {
     path = "/home/diako/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["telescope.vim-bookmarks"] = {
+    loaded = true,
+    path = "/home/diako/.local/share/nvim/site/pack/packer/start/telescope.vim-bookmarks",
+    url = "https://github.com/nvim-telescope/telescope.vim-bookmarks"
+  },
   ["todo-comments.nvim"] = {
     loaded = true,
     path = "/home/diako/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
