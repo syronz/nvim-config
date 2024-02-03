@@ -23,16 +23,19 @@ require("go").setup({
 	--      when lsp_cfg is true
 	-- if lsp_on_attach is a function: use this function as on_attach function for gopls
 	lsp_keymaps = true, -- set to false to disable gopls/lsp keymap
-	lsp_codelens = true, -- set to false to disable codelens, true by default, you can use a function
+	lsp_codelens = false, -- set to false to disable codelens, true by default, you can use a function
 	-- function(bufnr)
 	   -- vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>F", "<cmd>lua vim.lsp.buf.formatting()<CR>", {noremap=true, silent=true})
 	-- end
 	-- to setup a table of codelens
-	-- lsp_diag_hdlr = false, -- hook lsp diag handler
-	-- lsp_diag_underline = false,
-	-- virtual text setup
-	-- lsp_diag_virtual_text = { space = 0, prefix = "" },
-	-- lsp_diag_signs = false,
+	diagnostic = {  -- set diagnostic to false to disable vim.diagnostic setup
+      hdlr = true, -- hook lsp diag handler and send diag to quickfix
+      underline = true,
+      -- virtual text setup
+      virtual_text = { spacing = 0, prefix = '■' },
+      signs = true,
+      update_in_insert = false,
+  },
 	lsp_diag_update_in_insert = false,
 	lsp_document_formatting = true,
 	-- set to true: use gopls to format
