@@ -28,11 +28,11 @@ require("go").setup({
 	   -- vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>F", "<cmd>lua vim.lsp.buf.formatting()<CR>", {noremap=true, silent=true})
 	-- end
 	-- to setup a table of codelens
-	-- lsp_diag_hdlr = false, -- hook lsp diag handler
-	-- lsp_diag_underline = false,
+	lsp_diag_hdlr = false, -- hook lsp diag handler
+	lsp_diag_underline = false,
 	-- virtual text setup
-	-- lsp_diag_virtual_text = { space = 0, prefix = "" },
-	-- lsp_diag_signs = false,
+	lsp_diag_virtual_text = { space = 0, prefix = "" },
+	lsp_diag_signs = false,
 	lsp_diag_update_in_insert = false,
 	lsp_document_formatting = true,
 	-- set to true: use gopls to format
