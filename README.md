@@ -18,7 +18,7 @@
 | \<space\>q    | Diagnostic loclist             |
 | nvim-tree     |                                |
 | g?            | Show the mapping               |
-| n             | k                              |
-| n             | k                              |
+| ;h            | Easy motion                    |
+| ,f            | :GoFmt                         |
 | n             | k                              |
 | n             | k                              |

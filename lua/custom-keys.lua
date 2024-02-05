@@ -19,7 +19,7 @@ map('n', '<leader>to', ':TodoTelescope<CR>', {})
 map('n', '<leader>f', ':lua require"telescope.builtin".find_files({no_ignore=true, hidden=true})<CR>', {})
 map('n', '<leader>g', ':lua require"telescope.builtin".live_grep()<CR>', {})
 map('n', '<leader>b', ':lua require"telescope.builtin".buffers()<CR>', {})
-map('n', '<leader>hh', ':lua require"telescope.builtin".help_tags()<CR>', {})
+map('n', '<leader>th', ':lua require"telescope.builtin".help_tags()<CR>', {})
 
 -- Pane switcher
 map('n', '<C-j>', '<C-W>j', {})
@@ -63,6 +63,10 @@ map('n', '<LocalLeader>y', ':let @+=expand("%:p")<CR>:echo "Absolute pat copied 
 
 -- Miscellaneous
 map('n', '<Leader>h', ':HopWord<CR>', {})
+
+-- :GoFmt
+map('n', '<LocalLeader>f', ':GoFmt<CR>', {})
+map('n', '<LocalLeader>d', ':GoImport<CR>', {})
 
 
 
