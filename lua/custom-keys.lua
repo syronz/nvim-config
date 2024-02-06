@@ -62,11 +62,11 @@ map('n', '<LocalLeader>y', ':let @+=expand("%:p")<CR>:echo "Absolute pat copied 
 
 
 -- Miscellaneous
-map('n', '<Leader>h', ':HopWord<CR>', {})
+map('n', '<Leader>a', ':HopWord<CR>', {})
 
 -- :GoFmt
 map('n', '<LocalLeader>f', ':GoFmt<CR>', {})
-map('n', '<LocalLeader>d', ':GoImport<CR>', {})
+map('n', '<Leader>d', ':GoImport<CR>', {})
 
 
 
